@@ -1,0 +1,26 @@
+
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [ 
+            "last 2 versions",
+            "> 0.01%",
+            "ie > 8"
+          ]
+        }
+      }
+    ],
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-runtime",
+    ["import", {
+      "libraryName": "antd",
+      "style": "true"
+    }]
+  ]
+}

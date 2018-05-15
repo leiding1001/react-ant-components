@@ -1,0 +1,56 @@
+@import "../style/index";
+
+.common-table {
+
+  .ant-table .ant-table-tbody {
+    tr:nth-of-type(even) {
+      background-color: $color-orange-1;
+    }
+
+    tr:nth-of-type(odd) {
+      background-color: $color-white;
+    }
+  }
+
+  .ant-table th { word-break: break-all; }
+
+  .ant-table td { white-space: nowrap; }
+
+  .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th,
+  .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th,
+  .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th {
+    background: #F6F6F6;
+  }
+
+  .ant-table-tbody > tr > td {
+    border-bottom: none;
+  }
+
+  .ant-table-thead > tr > th.ant-table-selection-column,
+  .ant-table-tbody > tr > td.ant-table-selection-column {
+    min-width: 36px;
+    width: 36px;
+  }
+
+  .ant-table-bordered .ant-table-thead .ant-table-selection-column,
+  .ant-table-bordered .ant-table-tbody .ant-table-selection-column {
+    border-right: none;
+  }
+
+  .ant-table-small.ant-table-bordered .ant-table-thead > tr > th:last-child,
+  .ant-table-small.ant-table-bordered .ant-table-tbody > tr > td:last-child {
+    border-right: 1px solid #e8e8e8;
+  }
+}
+
+.tt-action-modal__table-td {
+  .label-cell, .label-cell__tooltip-text {
+    display: inline-block;
+    overflow: hidden;
+    word-break: break-all;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+}

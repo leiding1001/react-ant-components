@@ -1,0 +1,676 @@
+@font-face {
+  font-family: 'otms';
+  src:    url('./config/otms.eot?k9a1wd');
+  src:    url('./config/otms.eot?k9a1wd#iefix') format('embedded-opentype'),
+      url('./config/otms.woff2?k9a1wd') format('woff2'),
+      url('./config/otms.ttf?k9a1wd') format('truetype'),
+      url('./config/otms.woff?k9a1wd') format('woff'),
+      url('./config/otms.svg?k9a1wd#otms') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i.otms {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'otms' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.otms-move:before {
+  content: "\e9c8";
+}
+.otms-fintech-logo:before {
+content: "\e9c6";
+}
+.otms-weibo-2:before {
+content: "\e9bf";
+}
+.otms-linkedin-2:before {
+content: "\e9c0";
+}
+.otms-bank:before {
+content: "\e9c1";
+}
+.otms-sell:before {
+content: "\e9c2";
+}
+.otms-invoice-review:before {
+content: "\e9bb";
+color: #707070;
+}
+.otms-invoice-audit:before {
+content: "\e9bc";
+color: #707070;
+}
+.otms-zoom-out:before {
+content: "\e9b9";
+}
+.otms-zoom-in:before {
+content: "\e9ba";
+}
+.otms-reject-reason:before {
+content: "\e9b8";
+}
+.otms-approve:before {
+content: "\e9b3";
+}
+.otms-fap-download-icon:before {
+content: "\e9b4";
+}
+.otms-compare:before {
+content: "\e9b5";
+}
+.otms-attach:before {
+content: "\e9b6";
+}
+.otms-wallet:before {
+content: "\e9c7";
+}
+.otms-my-order:before {
+content: "\e9c5";
+}
+.otms-report:before {
+content: "\e9c4";
+}
+.otms-rfq:before {
+content: "\e9c3";
+}
+.otms-help-2:before {
+content: "\e9be";
+}
+.otms-wechat-share:before {
+content: "\e9b7";
+}
+.otms-wechat-2:before {
+content: "\e9b2";
+}
+.otms-role-transition:before {
+content: "\e9b1";
+}
+.otms-file-upload:before {
+content: "\e9ae";
+}
+.otms-text-2:before {
+content: "\e9af";
+}
+.otms-single-choice:before {
+content: "\e9b0";
+}
+.otms-drag-icon:before {
+content: "\e9ad";
+}
+.otms-rfi-reply:before {
+content: "\e9ac";
+}
+.otms-merge:before {
+content: "\e9ab";
+}
+.otms-freightpartner-logo-zh:before {
+content: "\e99a";
+}
+.otms-freightpartner-logo-en:before {
+content: "\e9aa";
+}
+.otms-freight-partner-icon:before {
+content: "\e9a9";
+}
+.otms-qualified:before {
+content: "\e9a7";
+}
+.otms-unqualified:before {
+content: "\e9a8";
+}
+.otms-dinosaur:before {
+content: "\e9a4";
+}
+.otms-rfi-blocked:before {
+content: "\e9a5";
+}
+.otms-rfi-waiting:before {
+content: "\e9a6";
+}
+.otms-white-paper:before {
+content: "\e9a2";
+}
+.otms-invite:before {
+content: "\e9a3";
+}
+.otms-save:before {
+content: "\e99f";
+}
+.otms-company-profile:before {
+content: "\e9a0";
+}
+.otms-rfi-account:before {
+content: "\e9a1";
+}
+.otms-rfi-apply:before {
+content: "\e99d";
+}
+.otms-rfi-edit:before {
+content: "\e99e";
+}
+.otms-rfi-avatar:before {
+content: "\e99c";
+}
+.otms-mail:before {
+content: "\e99b";
+}
+.otms-logo-otms-l:before {
+content: "\e998";
+}
+.otms-iphone:before {
+content: "\e995";
+}
+.otms-logo-oygm:before {
+content: "\e996";
+}
+.otms-website:before {
+content: "\e997";
+}
+.otms-more:before {
+content: "\e994";
+}
+.otms-TMS:before {
+content: "\e991";
+}
+.otms-logo:before {
+content: "\e992";
+}
+.otms-long-arrow:before {
+content: "\e98d";
+}
+.otms-sliders:before {
+content: "\e98e";
+}
+.otms-truck:before {
+content: "\e98f";
+}
+.otms-billing-check:before {
+content: "\e990";
+}
+.otms-shop:before {
+content: "\e993";
+}
+.otms-twarehouse:before {
+content: "\e989";
+}
+.otms-trdc:before {
+content: "\e98a";
+}
+.otms-tndc:before {
+content: "\e98b";
+}
+.otms-thub:before {
+content: "\e98c";
+}
+.otms-qrcode:before {
+content: "\e999";
+}
+.otms-scan-code:before {
+content: "\e987";
+}
+.otms-list-wechat:before {
+content: "\e988";
+}
+.otms-enlarge:before {
+  content: "\e9bd";
+}
+.otms-no-result:before {
+content: "\e976";
+}
+.otms-info:before {
+  content: "\e960";
+}
+.otms-pickupanddelivery:before {
+  content: "\e95d";
+}
+.otms-pickup:before {
+  content: "\e95e";
+}
+.otms-delivery:before {
+  content: "\e95f";
+}
+.otms-emphasize:before {
+  content: "\e959";
+}
+.otms-map:before {
+content: "\e979";
+}
+.otms-Start .path1:before {
+  content: "\e93f";
+  color: rgb(0, 146, 68);
+}
+.otms-Start .path2:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.otms-Play:before {
+  content: "\e941";
+}
+.otms-Pickup .path1:before {
+  content: "\e943";
+  color: rgb(69, 83, 111);
+}
+.otms-Pickup .path2:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.otms-Pickup .path3:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.otms-Pause:before {
+  content: "\e946";
+}
+.otms-multipleevent .path1:before {
+  content: "\e947";
+  color: rgb(243, 216, 65);
+}
+.otms-multipleevent .path2:before {
+  content: "\e948";
+  margin-left: -1.2802734375em;
+  color: rgb(74, 74, 74);
+}
+.otms-multipleevent .path3:before {
+  content: "\e949";
+  margin-left: -1.2802734375em;
+  color: rgb(74, 74, 74);
+}
+.otms-multipleevent .path4:before {
+  content: "\e94a";
+  margin-left: -1.2802734375em;
+  color: rgb(243, 216, 65);
+}
+.otms-multipleevent .path5:before {
+  content: "\e94b";
+  margin-left: -1.2802734375em;
+  color: rgb(74, 74, 74);
+}
+.otms-multipleevent .path6:before {
+  content: "\e94c";
+  margin-left: -1.2802734375em;
+  color: rgb(74, 74, 74);
+}
+.otms-hub .path1:before {
+  content: "\e94d";
+  color: rgb(69, 83, 111);
+}
+.otms-hub .path2:before {
+  content: "\e94e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.otms-hub .path3:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.otms-End .path1:before {
+  content: "\e950";
+  color: rgb(188, 30, 45);
+}
+.otms-End .path2:before {
+  content: "\e951";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.otms-dropoff .path1:before {
+  content: "\e952";
+  color: rgb(69, 83, 111);
+}
+.otms-dropoff .path2:before {
+  content: "\e953";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.otms-dropoff .path3:before {
+  content: "\e954";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.otms-Delay .path1:before {
+  content: "\e955";
+  color: rgb(243, 216, 65);
+}
+.otms-Delay .path2:before {
+  content: "\e956";
+  margin-left: -1.2275390625em;
+  color: rgb(74, 74, 74);
+}
+.otms-Delay .path3:before {
+  content: "\e957";
+  margin-left: -1.2275390625em;
+  color: rgb(74, 74, 74);
+}
+.otms-Delay .path4:before {
+  content: "\e958";
+  margin-left: -1.2275390625em;
+  color: rgb(74, 74, 74);
+}
+.otms-help:before {
+content: "\e982";
+}
+.otms-ec:before {
+content: "\e983";
+}
+.otms-billing:before {
+content: "\e984";
+}
+.otms-dock:before {
+content: "\e985";
+}
+.otms-datacenter:before {
+content: "\e986";
+}
+.otms-avatar:before {
+content: "\e981";
+}
+.otms-mobile-back:before {
+content: "\e980";
+}
+.otms-minus:before {
+content: "\e97f";
+}
+.otms-op-settings:before {
+content: "\e97e";
+}
+.otms-back:before {
+content: "\e97a";
+}
+.otms-handshake:before {
+content: "\e97b";
+}
+.otms-star:before {
+content: "\e97c";
+}
+.otms-event:before {
+content: "\e978";
+}
+.otms-email_available:before {
+  content: "\e974";
+}
+.otms-load_available:before {
+  content: "\e975";
+}
+.otms-intransit:before {
+  content: "\e973";
+}
+.otms-remove:before {
+  content: "\e971";
+}
+.otms-search:before {
+  content: "\e972";
+}
+.otms-compensation:before {
+  content: "\e96e";
+}
+.otms-discrepancy:before {
+  content: "\e96f";
+}
+.otms-rejection:before {
+  content: "\e970";
+}
+.otms-operation-error:before {
+  content: "\e96d";
+}
+.otms-filter:before {
+  content: "\e96c";
+}
+.otms-weibo:before {
+  content: "\e969";
+}
+.otms-wechat:before {
+  content: "\e96a";
+}
+.otms-linkedin:before {
+  content: "\e96b";
+}
+.otms-otmslogo:before {
+  content: "\e968";
+}
+.otms-view:before {
+  content: "\e964";
+}
+.otms-reject:before {
+  content: "\e965";
+}
+.otms-recall:before {
+  content: "\e966";
+}
+.otms-downloadAll:before {
+  content: "\e967";
+}
+.otms-file:before {
+  content: "\e95a";
+}
+.otms-uploadFiles:before {
+  content: "\e95b";
+}
+.otms-special_charge:before {
+  content: "\e93d";
+}
+.otms-timeline_release:before {
+  content: "\e93e";
+}
+.otms-timeline_exception:before {
+  content: "\e935";
+}
+.otms-timeline_ePOD:before {
+  content: "\e936";
+}
+.otms-timeline_dispatch:before {
+  content: "\e937";
+}
+.otms-timeline_delivery:before {
+  content: "\e938";
+}
+.otms-timeline-billing:before {
+  content: "\e961";
+}
+.otms-timeline-created:before {
+  content: "\e962";
+}
+.otms-timeline-pickup:before {
+  content: "\e963";
+}
+.otms-wrongMilestone:before {
+  content: "\e939";
+}
+.otms-specialFee:before {
+  content: "\e93a";
+}
+.otms-epod:before {
+  content: "\e93b";
+}
+.otms-complain:before {
+  content: "\e93c";
+}
+.otms-Plus:before {
+content: "\e977";
+}
+.otms-location:before {
+  content: "\e95c";
+}
+.otms-exclamation:before {
+  content: "\e934";
+}
+.otms-error:before {
+  content: "\e933";
+}
+.otms-accept-btn:before {
+  content: "\e930";
+}
+.otms-add:before {
+  content: "\e931";
+}
+.otms-propose-btn:before {
+  content: "\e932";
+}
+.otms-close:before {
+  content: "\e92e";
+}
+.otms-propose:before {
+  content: "\e92f";
+}
+.otms-copy:before {
+  content: "\e926";
+}
+.otms-create:before {
+  content: "\e927";
+}
+.otms-delete:before {
+  content: "\e928";
+}
+.otms-dropdown:before {
+  content: "\e929";
+}
+.otms-edit:before {
+  content: "\e92a";
+}
+.otms-forward:before {
+  content: "\e92b";
+}
+.otms-numeric:before {
+  content: "\e92c";
+}
+.otms-text:before {
+  content: "\e92d";
+}
+.otms-notification:before {
+  content: "\e924";
+}
+.otms-settings:before {
+  content: "\e925";
+}
+.otms-refresh:before {
+  content: "\e923";
+}
+.otms-calendar:before {
+  content: "\e922";
+}
+.otms-truckonmap .path1:before {
+  content: "\e91b";
+  color: rgb(69, 83, 111);
+}
+.otms-truckonmap .path2:before {
+  content: "\e91c";
+  margin-left: -1.34375em;
+  color: rgb(69, 83, 111);
+}
+.otms-truckonmap .path3:before {
+  content: "\e91d";
+  margin-left: -1.34375em;
+  color: rgb(255, 255, 255);
+}
+.otms-truckonmap .path4:before {
+  content: "\e920";
+  margin-left: -1.34375em;
+  color: rgb(255, 255, 255);
+}
+.otms-truckonmap .path5:before {
+  content: "\e921";
+  margin-left: -1.34375em;
+  color: rgb(255, 255, 255);
+}
+.otms-capacity:before {
+  content: "\e90f";
+}
+.otms-done:before {
+  content: "\e911";
+}
+.otms-emptypageicon:before {
+  content: "\e912";
+}
+.otms-errormessage:before {
+  content: "\e913";
+}
+.otms-lastseen:before {
+  content: "\e914";
+}
+.otms-length:before {
+  content: "\e915";
+}
+.otms-mobile:before {
+  content: "\e916";
+}
+.otms-QTY:before {
+  content: "\e917";
+}
+.otms-trucktype:before {
+  content: "\e918";
+}
+.otms-volum:before {
+  content: "\e919";
+}
+.otms-weight:before {
+  content: "\e91a";
+}
+.otms-milestone-billing:before {
+  content: "\e900";
+}
+.otms-milestone-created:before {
+  content: "\e901";
+}
+.otms-milestone-delivery:before {
+  content: "\e902";
+}
+.otms-milestone-dispatch:before {
+  content: "\e903";
+}
+.otms-milestone-epod:before {
+  content: "\e904";
+}
+.otms-milestone-intransit-event:before {
+  content: "\e905";
+}
+.otms-milestone-pickup:before {
+  content: "\e906";
+}
+.otms-milestone-release:before {
+  content: "\e907";
+}
+.otms-milestone-SLA:before {
+  content: "\e908";
+}
+.otms-timeline-exception:before {
+  content: "\e909";
+}
+.otms-timeline-order-file:before {
+  content: "\e90a";
+}
+.otms-equalizer:before {
+  content: "\e90e";
+}
+.otms-equalizer2:before {
+  content: "\e90d";
+}
+.otms-star-empty:before {
+  content: "\e91e";
+}
+.otms-star-half:before {
+  content: "\e91f";
+}
+.otms-star-full:before {
+  content: "\e910";
+}
+.otms-checkmark:before {
+content: "\e97d";
+}
+.otms-export:before {
+  content: "\e90b";
+}
+.otms-share-link:before {
+  content: "\e90c";
+}

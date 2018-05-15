@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>oTMS 引领互联运输之道</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="renderer" content="webkit" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+  />
+  <meta name="description" content="" />
+  <link id="logoIcon" rel="icon" sizes="16x16 32x32 50x50" href="https://otms-public.oss-cn-hangzhou.aliyuncs.com/images/otms.png"
+  />
+
+  <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/antd/3.3.1/antd.min.css" /> -->
+  <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.zh"></script> -->
+  <script type="text/javascript" src="./static/js/intl-polyfill.min.js"></script>
+  <script type="text/javascript" src="./static/js/bw-loader-415.6.31.js"></script>
+  <script type="text/javascript" src="./static/js/shim.dll.js"></script>
+  <script type="text/javascript" src="./static/js/public.dll.js"></script>
+  <script type="text/javascript" src="./static/js/vendor.dll.js"></script>
+
+  <script type="text/javascript">
+    var apiRootUrl = "/";
+  </script>
+  <!-- OneAPM -->
+  <script type='text/javascript'>
+    window.BWEUM || (BWEUM = {});
+    BWEUM.info = {
+      "stand": true,
+      "agentType": "browser",
+      "agent": "browsercollector.oneapm.com/static/js/bw-send-415.6.31.js",
+      "beaconUrl": "browsercollector.oneapm.com/beacon",
+      "licenseKey": "6EQYR~iJQQrFEQmB",
+      "applicationID": {
+        'login.otms.cn': 3601245,
+      }[document.location.host] || 6315407
+    };
+  </script>
+
+  <!-- Growing IO -->
+  <script type='text/javascript'>
+    var trackProductOnly = true;
+    if (!trackProductOnly || document.location.host === '<%= htmlWebpackPlugin.options.productHost %>') {
+      var _vds = _vds || [];
+      window._vds = _vds;
+      (function () {
+        _vds.push(['setAccountId', '<%= htmlWebpackPlugin.options.growingIOKey %>']);
+        _vds.push(['enableHT', true]);
+
+        (function () {
+          var vds = document.createElement('script');
+          vds.type = 'text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'assets.growingio.com/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+      })();
+    }
+  </script>
+
+</head>
+
+<body class="">
+  <div id="content">
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+@import "../style/index";
+
+.tooltip-label {
+  &__text {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    vertical-align: middle;
+    padding-left: 0.5px; // Fixed VAN-791.
+  }
+
+  &--disabled {
+    color: $color-gray;
+  }
+
+  &__highlight {
+    color: $color-orange-2;
+  }
+
+  &__overlay {
+    .ant-tooltip-inner {
+      word-break: break-all;
+    }
+  }
+}
