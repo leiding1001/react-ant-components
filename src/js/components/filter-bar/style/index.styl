@@ -1,0 +1,62 @@
+@import "../../style/index";
+
+.filter-bar {
+  &__container {
+    background-color: $color-white;
+    margin: 10px;
+  }
+
+  &___list-container {
+  }
+
+ 
+  &__list-container ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  &__list-container ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 4px;
+  }
+
+  &__item{
+    height: 30px;
+    min-width: 30px;
+    padding: 1px 5px;
+    text-align: left;
+    line-height: 28px;
+  }
+
+  &__item:hover {
+    background-color: #f7f7f7;
+    border-color: #ccc;
+    border-radius: 3px;
+  }
+
+  &__item__close {
+    color: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    vertical-align: middle;
+    padding-left: 3px;
+  }
+
+   &__item__close:hover {
+    color: rgba(0, 0, 0, 0.65)
+  }
+
+  &__item__close-icon {
+    font-size: 8px;
+    vertical-align: middle;
+  }
+
+  &__item__close-icon {
+
+  }
+
+  &__item__dropdown-icon {
+      font-size: 8px;
+      color: rgba(0, 0, 0, 0.65);
+      padding-left: 3px;
+    }
+}

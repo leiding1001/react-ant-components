@@ -3,6 +3,8 @@ import {Layout} from 'antd';
 
 import PageUtil from '../../common/utils/page-util';
 
+import FilterBar from '../../components/filter-bar/filter-bar.jsx';
+
 
 class HomeContainer extends Component {
 
@@ -24,7 +26,7 @@ class HomeContainer extends Component {
     return (
       <Layout className="track-trace-container">
         <Layout>
-          {`Test`}
+          <FilterBar />
         </Layout>
       </Layout>
     );
