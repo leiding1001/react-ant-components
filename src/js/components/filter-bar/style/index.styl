@@ -26,6 +26,7 @@
     padding: 1px 5px;
     text-align: left;
     line-height: 28px;
+    position: relative;
   }
 
   &__item:hover {
@@ -55,8 +56,47 @@
   }
 
   &__item__dropdown-icon {
-      font-size: 8px;
-      color: rgba(0, 0, 0, 0.65);
-      padding-left: 3px;
+    font-size: 8px;
+    color: rgba(0, 0, 0, 0.65);
+    padding-left: 3px;
+  }
+
+  &__dropdown-arrow {
+    transition: transform .3s cubic-bezier(.645,.045,.355,1);
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 10px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      vertical-align: baseline;
+      background: #fff;
+      background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.65)),to(rgba(0,0,0,.65)));
+      background-image: -webkit-linear-gradient(left,rgba(0,0,0,.65),rgba(0,0,0,.65));
+      background-image: linear-gradient(90deg,rgba(0,0,0,.65),rgba(0,0,0,.65));
+      width: 6px;
+      height: 1.5px;
+      border-radius: 2px;
+      transition: background .3s cubic-bezier(.645,.045,.355,1),transform .3s cubic-bezier(.645,.045,.355,1),top .3s cubic-bezier(.645,.045,.355,1),-webkit-transform .3s cubic-bezier(.645,.045,.355,1);
     }
+
+    &:after {
+      content: "";
+    position: absolute;
+    vertical-align: baseline;
+    background: #fff;
+    background-image: linear-gradient(90deg,rgba(0,0,0,.65),rgba(0,0,0,.65));
+    width: 6px;
+    height: 1.5px;
+    border-radius: 2px;
+    transition: background .3s cubic-bezier(.645,.045,.355,1),transform .3s cubic-bezier(.645,.045,.355,1),top .3s cubic-bezier(.645,.045,.355,1);
+    }
+  }
+
+  .open.&__dropdown-arrow {
+
+  }
+
 }

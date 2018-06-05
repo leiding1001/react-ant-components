@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import _ from 'underscore';
 import CloneDeep from 'lodash.clonedeep';
 
-import FilterItem from './filter-item.jsx';
+import MulSelectItem from './items/mul-select.jsx';
 
 import './style/index.styl';
 
@@ -67,59 +67,11 @@ class FilterBar extends Component {
     return (
       <div className="filter-bar__list-container">
         <ul>
-          {
-            [1, 2, 3, 4, 5].map((it, index) => {
-              const itemProps = {
-                id: it
-              };
-
-              return (
-                <li key={index}>
-                  <FilterItem
-                    removable={false}
-                    onChange={this.handleChange}
-                    onSearch={this.handleSearch}
-                    data={itemProps}
-                  />
-                </li>
-              );
-            })
-          }
-          <li>
-            <FilterItem
-              data={{id: 'More'}}
-              removable={false}
-              onChange={this.handleChange}
-            />
-          </li>
-        </ul>
-      </div>
-    );
-  }
-
-  renderMoreFilterItems() {
-    return (
-      <div className="filter-bar__list-container">
-        <ul>
-          {
-            [1, 2, 3, 4, 5].map((it, index) => {
-              const itemProps = {
-                id: it
-              };
-
-              return (
-                <li key={index}>
-                  <FilterItem
-                    removable={true}
-                    onRemove={this.handleRemove}
-                    onChange={this.handleChange}
-                    onSearch={this.handleSearch}
-                    data={itemProps}
-                  />
-                </li>
-              );
-            })
-          }
+          <MulSelectItem
+            data={{id: 'More'}}
+            removable={false}
+            onChange={this.handleChange}
+          />
         </ul>
       </div>
     );
@@ -129,7 +81,6 @@ class FilterBar extends Component {
     return (
       <div className="filter-bar__container">
         {this.renderDefaultFilterItems()}
-        {this.renderMoreFilterItems()}
       </div>
     );
   }

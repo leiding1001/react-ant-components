@@ -3,7 +3,7 @@ import {Icon} from 'antd';
 import PropTypes from 'prop-types';
 import _ from 'underscore';
 
-class FilterItem extends Component {
+class FilterWrapperItem extends Component {
   constructor(props) {
     super(props);
 
@@ -31,21 +31,23 @@ class FilterItem extends Component {
   render() {
 
     return(
-      <div className="filter-bar__item">
-        {`${this.props.data.id}`}
-        <Icon
-          className="filter-bar__item__dropdown-icon"
-          type="caret-down"
-        />
-        {this.props.removable ? this.renderRemoveButton() : null}
 
-      </div>
+      <li>
+        <div className="filter-bar__item">
+          {this.props.children}
+
+          {/* <Icon
+            className="filter-bar__item__dropdown-icon"
+            type="caret-down"
+          /> */}
+          {this.props.removable ? this.renderRemoveButton() : null}
+        </div>
+      </li>
     );
   }
 }
 
-FilterItem.propTypes = {
-  key: PropTypes.string,
+FilterWrapperItem.propTypes = {
   onRemove: PropTypes.func,
   removable: PropTypes.bool,
   onChange: PropTypes.func,
@@ -53,7 +55,7 @@ FilterItem.propTypes = {
   data: PropTypes.object
 };
 
-FilterItem.defaultProps = {
+FilterWrapperItem.defaultProps = {
   onRemove: () => {},
   removable: false,
   onChange: () => {},
@@ -61,4 +63,4 @@ FilterItem.defaultProps = {
   data: {}
 };
 
-export default FilterItem;
+export default FilterWrapperItem;

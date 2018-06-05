@@ -5,11 +5,11 @@ module.exports = {
   environments: ['dev', 'prod', 'test'],
   // 当前webpack server 配置
   host: process.env.HOST || 'localhost',
-  port: process.env.PORT || (process.env.NODE_ENV === 'prod' ? 8080 : 8889),
+  port: process.env.PORT || (process.env.NODE_ENV === 'prod' ? 8080 : 8081),
 
   // API Server 配置
   apiHost: process.env.APIHOST || 'localhost',
-  apiPort: process.env.APIPORT || '3030',
+  apiPort: process.env.APIPORT || '3031',
 
   // 在API Server 反向代理配置
   isRemoteProxy: false,
